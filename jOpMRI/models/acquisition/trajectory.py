@@ -8,9 +8,13 @@ from jOpMRI.models.utils.constraints import ClipValue, ScannerConstraints
 from .utils import get_density_compensators, SampleRepulsion, ConstraintPenalty
 
 from modopt.base.backend import move_to_cpu
-from sparkling.utils.trajectory import init_shots, interpolate_shots
-import logging
+import logging, warnings
 
+try:
+    from sparkling.utils.trajectory import init_shots, interpolate_shots
+except ImportError:
+    warnings.warn('SPARKLING not installed, not all features exist')
+    
 log = logging.getLogger(__name__)
 
 

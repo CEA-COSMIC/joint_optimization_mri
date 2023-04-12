@@ -5,7 +5,10 @@ from tensorflow.keras.models import Model
 from tfkbnufft import kbnufft_forward
 from jOpMRI.models.acquisition.utils import nufft
 
-from sparkling.utils.trajectory import get_time_vector
+try:
+    from sparkling.utils.trajectory import get_time_vector
+except:
+    pass
 
 
 class BasicForward(Model):

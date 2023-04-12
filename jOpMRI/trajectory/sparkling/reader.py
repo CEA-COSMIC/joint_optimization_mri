@@ -3,8 +3,11 @@ import numpy as np
 
 from jOpMRI.models.acquisition.utils import get_density_compensators
 
-from sparkling.utils.gradient import get_kspace_loc_from_gradfile
-from sparkling.utils.shots import convert_NCxNSxD_to_NCNSxD
+try:
+    from sparkling.utils.gradient import get_kspace_loc_from_gradfile
+    from sparkling.utils.shots import convert_NCxNSxD_to_NCNSxD
+except:
+    pass
 
 
 def read_trajectory(filename, osf=5, dcomp=False, gradient_raster_time=0.01, interpob=None, return_reshaped=True):

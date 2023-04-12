@@ -1,11 +1,14 @@
 import numpy as np
 
 import matplotlib.pyplot as plt
-from sparkling.utils.shots import convert_NCxNSxD_to_NCNSxD
 from jOpMRI.models.acquisition.utils import _next_smooth_int
 import tensorflow as tf
 import napari
-
+try:
+    from sparkling.utils.shots import convert_NCxNSxD_to_NCNSxD
+except:
+    pass
+    
 
 def view_gradients(trajectory, grads, log=False, return_figure=False, fig_scale=2, random_seed=None, num_shots=None, **plt_kwargs):
     fig = plt.figure(figsize=(6.4*fig_scale, 5*fig_scale))

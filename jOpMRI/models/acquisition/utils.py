@@ -3,10 +3,13 @@ from tfkbnufft import kbnufft_forward, kbnufft_adjoint
 from tensorflow.keras.regularizers import Regularizer
 import tensorflow as tf
 import tensorflow_nufft as tfft
-from sparkling.utils.trajectory import get_time_vector
 from jOpMRI.trajectory.utils import get_grads_n_slew, interpolate_shots_only
 import numpy as np
-
+try:
+    from sparkling.utils.trajectory import get_time_vector
+except:
+    pass
+    
 
 def redo_till_no_nan(func, max_iter=10):
     """

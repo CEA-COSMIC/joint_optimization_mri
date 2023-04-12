@@ -24,7 +24,6 @@ from fastmri_recon.models.subclassed_models.unet import UnetComplex
 
 from tf_fastmri_data.preprocessing_utils.extract_smaps import non_cartesian_extract_smaps
 
-from jOpMRI.models.acquisition import INITIALIZATION as INIT
 
 from tfkbnufft.kbnufft import KbNufftModule, kbnufft_adjoint
 
@@ -33,7 +32,7 @@ log = logging.getLogger(__name__)
 
 
 class AcqRecModel(GAModelWrapper):
-    def __init__(self, trajectory_kwargs=INIT, acq_kwargs={}, recon_kwargs={}, combine_coil=False, batch_size=None,
+    def __init__(self, trajectory_kwargs, acq_kwargs={}, recon_kwargs={}, combine_coil=False, batch_size=None,
                  multicoil=False, prospective=False, opt_kwargs={}, nufft_implementation='tensorflow-nufft', cfg=None, 
                  accum_steps=1, **kwargs):
         super(AcqRecModel, self).__init__(accum_steps=accum_steps, **kwargs)
