@@ -1,4 +1,4 @@
-numpy >= 1.18,<1.20
+numpy >= 1.18
 scikit-image
 matplotlib
 tqdm >= 4.36.1
@@ -14,7 +14,7 @@ hydra-joblib-launcher
 hydra-submitit-launcher
 pymapvbvd
 tensorflow-addons >= 0.12.1
-tfkbnufft >= 0.2.3
+git+https://github.com/zaccharieramzi/tfkbnufft@chaithyagr-patch-1
 tf-fastmri-data
 modopt >= 1.5.1
 pandas
