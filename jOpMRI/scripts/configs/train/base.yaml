@@ -1,0 +1,14 @@
+optimizer:
+  loss: compound_mssim
+  traj_opt_kwargs:
+    learning_rate: 1e-3
+    scheduler: None
+  recon_opt_kwargs:
+    learning_rate: 1e-3
+accum_steps: 1
+nufft_implementation: tensorflow-nufft
+batch_size: 15
+num_steps_per_epoch: 15
+num_epochs: 20
+validation_steps: 1
+decay_extra_factor_over_decim: 1.0

@@ -1,0 +1,7 @@
+type: xpdnet
+params:
+  name: MWCNN
+  size: small
+  n_primal: 5
+  n_iter: 10
+weights_file: null

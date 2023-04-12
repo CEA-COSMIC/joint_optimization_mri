@@ -1,0 +1,14 @@
+defaults:
+  - data: fastmri_brain
+  - reconstruction: xpdnet
+  - acquisition: loupe
+  - train: learn
+  - output: basic
+
+image_size: [320, 320, 1]
+debug: 0
+run_name: learn_loupe
+
+hydra:
+  run:
+    dir: ${oc.env:OUT_DIR}/${run_name}/${now:%Y-%m-%d_%H-%M-%S}

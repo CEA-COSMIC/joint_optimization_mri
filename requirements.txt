@@ -1,0 +1,24 @@
+numpy >= 1.18
+scikit-image
+matplotlib
+tqdm >= 4.36.1
+tensorflow == 2.9
+tensorflow-probability == 0.16.0
+tensorflow-io == 0.26.0
+tensorflow-nufft == 0.9.0
+cupy-cuda112
+keras
+hydra-core
+pydicom
+hydra-joblib-launcher
+hydra-submitit-launcher
+pymapvbvd
+tensorflow-addons >= 0.12.1
+tfkbnufft >= 0.2.3
+tf-fastmri-data
+modopt >= 1.5.1
+pandas
+simpleitk
+napari
+tensorflow-graphics
+gitpython

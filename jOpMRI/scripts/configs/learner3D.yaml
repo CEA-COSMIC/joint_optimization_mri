@@ -1,0 +1,22 @@
+defaults:
+  - data: calgary
+  - trajectory: t1_calgary
+  - acquisition: nufft
+  - reconstruction: adjoint
+  - train: multires
+  - output: basic
+  - override hydra/launcher: submitit_slurm
+train:
+  batch_size: 1
+
+debug: 0
+continue: false
+outdir: null
+model_file: null
+run_name: learner
+
+hydra:
+  run:
+    dir: ${oc.env:OUT_DIR}/${run_name}/${now:%Y-%m-%d_%H-%M-%S}
+  sweep:
+    dir: ${oc.env:OUT_DIR}/${run_name}/${now:%Y-%m-%d_%H-%M-%S}

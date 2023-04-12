@@ -1,0 +1,8 @@
+defaults:
+  - learner3D
+  - override hydra/launcher: joblib
+
+debug: 0
+model_file: null
+run_name: learner
+

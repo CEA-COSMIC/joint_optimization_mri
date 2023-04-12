@@ -1,0 +1,18 @@
+defaults:
+  - data: tfrecords
+  - trajectory: t1
+  - acquisition: nufft
+  - reconstruction: ncpdnet
+  - train: learn
+  - output: basic
+  - override hydra/launcher: submitit_slurm
+
+debug: 0
+model_file: null
+run_name: learner
+
+hydra:
+  run:
+    dir: ${oc.env:OUT_DIR}/${run_name}/${now:%Y-%m-%d_%H-%M-%S}
+  sweep:
+    dir: ${oc.env:OUT_DIR}/${run_name}/${now:%Y-%m-%d_%H-%M-%S}

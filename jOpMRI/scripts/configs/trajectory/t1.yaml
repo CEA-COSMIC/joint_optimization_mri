@@ -1,0 +1,35 @@
+traj_init: null
+scan_consts:
+  gradient_raster_time: 0.01
+  gradient_mag_max: 0.04
+  slew_rate_max: 0.1
+  gyromagnetic_constant: 42576.0
+traj_params:
+  dimension: 2
+  num_shots: 32
+  initialization: RadialIO
+  num_samples_per_shot: 513
+  oversampling_factor: 5
+  perturbation_factor: 0.75
+  num_revolutions: 2
+recon_params:
+  img_size: 320x320
+  FOV: 0.23x0.23
+dist_params:
+  cutoff: 25
+  decay: 2
+algo_params:
+  max_proj_iter: 100
+  trajectory_regularization: null
+  start_decim: 32
+  shape_grad: null
+  proj_n_cpu: 1
+  stepDef: 0.009947183943243459
+  proj_gpu: true
+  shaking: false
+  tolerance: 0
+  proj_every_n_iter: 1
+  remove_center_points: true
+  fmm_params:
+    fmm_method: gpu_direct_pykeops
+

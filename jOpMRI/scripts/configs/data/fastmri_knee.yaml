@@ -1,0 +1,10 @@
+name: fastmri_knee
+train_path: knee_singlecoil_train/multicoil_train
+val_path: knee_singlecoil_val/multicoil_val
+coils: singlecoil
+contrast: null
+complex_image: 0
+train_val_split: 0.75
+n_samples: null
+scale_factor: 1e6
+shuffle: 200

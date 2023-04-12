@@ -1,0 +1,10 @@
+type: unet
+dcomp: 1
+trainable: 1
+params:
+  n_layers: 4
+  layers_n_channels: [16, 32, 64, 128]
+  layers_n_non_lins: 2
+  kernel_size: 3
+  n_output_channels: 1
+weights_file: null

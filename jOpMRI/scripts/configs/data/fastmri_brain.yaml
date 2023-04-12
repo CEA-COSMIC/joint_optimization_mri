@@ -1,0 +1,10 @@
+name: fastmri_brain
+train_path: brain_multicoil_train/multicoil_train
+val_path: brain_multicoil_val/multicoil_val
+coils: multicoil
+contrast: [AXT1, AXT1PRE, AXT1POST]
+complex_image: 0
+train_val_split: 0.75
+n_samples: null
+scale_factor: 1e6
+shuffle: 4258

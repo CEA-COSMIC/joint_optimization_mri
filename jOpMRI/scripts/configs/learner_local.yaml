@@ -1,0 +1,24 @@
+defaults:
+  - data: tfrecords
+  - trajectory: t1
+  - acquisition: nufft
+  - reconstruction: ncpdnet
+  - train: learn
+  - output: basic
+  - override hydra/launcher: joblib
+
+debug: 0
+model_file: null
+run_name: learner
+
+hydra:
+  job:
+    config:
+      override_dirname:
+        kv_sep: _
+        item_sep: __
+  run:
+    dir: ${oc.env:OUT_DIR}/${run_name}/${now:%Y-%m-%d_%H-%M-%S}
+  sweep:
+    dir: ${oc.env:OUT_DIR}/${run_name}/${now:%Y-%m-%d_%H-%M-%S}
+    subdir: ${hydra.job.override_dirname}

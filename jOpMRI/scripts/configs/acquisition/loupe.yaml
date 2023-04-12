@@ -1,0 +1,6 @@
+type: loupe
+params:
+  sparsity: 0.3
+  pmask_slope: 5
+  sample_slope: 20
+  pmask_init: null

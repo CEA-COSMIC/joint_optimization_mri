@@ -1,0 +1,9 @@
+defaults:
+  - data: fastmri_brain
+
+debug: 0
+run_name: spectrum_density
+
+hydra:
+  run:
+    dir: ${oc.env:OUT_DIR}/${run_name}/${now:%Y-%m-%d_%H-%M-%S}

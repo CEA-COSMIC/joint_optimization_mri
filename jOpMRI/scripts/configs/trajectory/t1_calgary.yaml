@@ -1,0 +1,5 @@
+defaults:
+  - t1_3D
+recon_params:
+  img_size: 256x224x176
+  FOV: 0.256x0.224x0.176

@@ -1,0 +1,4 @@
+type: 'constant_t2b0'
+params:
+  T2: [50e-3, 110e-3]
+  B0: [-50, 50]

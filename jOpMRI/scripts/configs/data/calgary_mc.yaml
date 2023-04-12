@@ -1,0 +1,11 @@
+name: calgary_mc
+train_path: calgary_multicoil
+val_path: calgary_multicoil
+coils: multicoil
+contrast: null
+complex_image: 0
+train_val_split: null
+n_samples: null
+scale_factor: 256
+shuffle: 50
+len_data: 67

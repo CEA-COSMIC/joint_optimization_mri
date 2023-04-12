@@ -1,0 +1,5 @@
+defaults:
+  - base
+type: segmented
+segments: [3, 2, 1]
+

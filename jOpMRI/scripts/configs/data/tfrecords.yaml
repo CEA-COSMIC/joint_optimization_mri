@@ -1,0 +1,12 @@
+name: tfrecords
+train_path: brain_vcc_tfrecords_train
+val_path: brain_vcc_tfrecords_val
+contrast: AXT1
+train_val_split: 0.9
+slice_random: 1
+n_samples: null
+shuffle: 1000
+t1_len_data: 1447 #22786
+t2_len_data: 2678 #42506
+len_data: null
+use_abs_image_input: 0

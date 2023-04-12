@@ -1,0 +1,13 @@
+defaults:
+  - data: fastmri_brain
+
+image_size: [320, 320]
+
+debug: 0
+run_name: vcc_data
+
+hydra:
+  run:
+    dir: ${oc.env:OUT_DIR}/${run_name}/${now:%Y-%m-%d_%H-%M-%S}
+  sweep:
+    dir: ${oc.env:OUT_DIR}/${run_name}/${now:%Y-%m-%d_%H-%M-%S}

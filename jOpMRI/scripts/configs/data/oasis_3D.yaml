@@ -1,0 +1,11 @@
+name: oasis
+train_path: OASIS_data
+val_path: OASIS_data
+coils: singlecoil
+contrast: [T1, T2]
+complex_image: 0
+train_val_split: 0.995
+n_samples: null
+scale_factor: 1
+shuffle: 1000
+len_data: null

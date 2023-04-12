@@ -1,0 +1,8 @@
+callbacks:
+  save_freq: 50
+  image_freq: 10
+  clean_freq: 100
+  grad_freq: null
+  get_gmax_smax_metrics: false
+get_grads: true
+profile: false

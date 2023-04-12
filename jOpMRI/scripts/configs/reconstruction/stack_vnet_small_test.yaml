@@ -1,0 +1,13 @@
+defaults:
+ - stack_vnet
+params:
+  n_scales: 1
+  n_filters: 2
+vnet_kwargs:
+  n_output_channels: 1
+  kernel_size: 3 
+  layers_n_non_lins: 2
+  res: false
+  non_linearity: relu
+  dealiasing_nc: true
+weights_file: null

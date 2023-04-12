@@ -1,0 +1,12 @@
+name: calgary
+train_path: calgary_vcc_tfrecords/Train
+val_path: calgary_vcc_tfrecords/Val
+test_path: calgary_vcc_tfrecords/Test
+coils: multicoil
+contrast: null
+complex_image: 0
+train_val_split: null
+n_samples: null
+scale_factor: 256
+shuffle: 50
+len_data: [145,2,20]

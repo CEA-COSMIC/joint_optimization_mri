@@ -1,0 +1,20 @@
+defaults:
+  - data: tfrecords
+  - override hydra/launcher: submitit_slurm
+batch_size: 64
+
+outdir: ???
+model_file: null
+
+debug: 5
+run_name: evaluate_jOpModel
+multicoil: false
+base_data_type: fastMRI
+datadir: ${data.val_path}
+num_save: 5
+
+hydra:
+  run:
+    dir: ${oc.env:OUT_DIR}/${run_name}/${now:%Y-%m-%d_%H-%M-%S}
+  sweep:
+    dir: ${oc.env:OUT_DIR}/${run_name}/${now:%Y-%m-%d_%H-%M-%S}

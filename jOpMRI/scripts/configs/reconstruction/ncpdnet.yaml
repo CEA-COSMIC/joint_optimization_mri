@@ -1,0 +1,13 @@
+type: ncpdnet
+dcomp: 1
+trainable: 1
+params:
+  n_primal: 5
+  three_d: false
+  activation: relu
+  n_iter: 10
+  n_filters: 32
+  normalize_image: false
+  refine_smaps: true
+  output_shape_spec: false
+weights_file: null
