@@ -1,0 +1,3 @@
+cmake
+libgl1-mesa-glx
+libhdf5-dev
