@@ -1,2 +1,2 @@
-pip install git+https://github.com/zaccharieramzi/fastmri-reproducible-benchmark
+pip install git+https://github.com/chaithyagr/fastmri-reproducible-benchmark@patch-1
 pip install -e .
