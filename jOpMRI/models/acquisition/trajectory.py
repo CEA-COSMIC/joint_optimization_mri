@@ -55,7 +55,7 @@ class _Trajectory(Layer):
                 1/2/np.pi,
                 (traj_params['num_shots'], traj_params['num_samples_per_shot'], traj_params['dimension']),
             )
-            self.mask_init = np.zeros(self.init.shape[:-1], dtype=np.bool)
+            self.mask_init = np.zeros(self.init.shape[:-1], dtype=bool)
         self.mask = self.mask_init
         if self.project:
             self.projector = ScannerConstraints(
