@@ -15,7 +15,7 @@ except ImportError:
 from .trajectory import view_gradients, view_sliced_traj, tf_sliced_dens, np_sliced_mask
 
 def zoom_in(ax, inset_axes, trajectory, zoom_loc):
-    pattern = convert_NCxNSxD_to_NCNSxD(trajectory)
+    pattern = trajectory.reshape(-1, trajectory.shape[-1])
     inset_axes.plot(pattern[:, 0], pattern[:, 1], c='b')
     inset_axes.plot(trajectory[0, :, 0], trajectory[0, :, 1], c='r')
     [x1, x2, y1, y2] = zoom_loc

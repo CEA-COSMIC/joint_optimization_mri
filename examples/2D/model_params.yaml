@@ -21,7 +21,7 @@ trajectory:
     decay: 2
   algo_params:
     max_proj_iter: 0
-    start_decim: 32
+    start_decim: 1
     shape_grad: null
     proj_n_cpu: 1
     stepDef: 0.009947183943243459
