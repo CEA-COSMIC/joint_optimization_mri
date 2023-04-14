@@ -17,6 +17,7 @@ tensorflow-addons >= 0.12.1
 tfkbnufft
 tf-fastmri-data
 modopt >= 1.5.1
+scikit-image<=0.19.3
 pandas
 simpleitk
 napari
